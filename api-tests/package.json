@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest --runInBand",
     "test:watch": "jest --watch",
-    "postman": "newman run postman/collection.json"
+    "postman": "newman run postman/collection.json",
+    "postman:html": "newman run postman/collection.json --reporters cli,html --reporter-html-export results/postman.html"
   },
   "dependencies": {
     "ajv": "8.17.1",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "jest": "29.7.0",
     "newman": "6.1.2",
+    "newman-reporter-html": "1.0.8",
     "jest-html-reporters": "3.1.7",
     "jest-junit": "16.0.0"
   }

@@ -1,0 +1,50 @@
+stages:
+  - api
+  - performance
+  - e2e
+
+api_tests:
+  stage: api
+  image: node:20-alpine
+  before_script:
+    - cd api-tests
+    - npm ci --no-audit --no-fund
+  script:
+    - mkdir -p results
+    - npm test
+    - npm run postman:html || echo "Postman HTML generation skipped"
+  artifacts:
+    when: always
+    paths:
+      - api-tests/results/
+    expire_in: 7 days
+
+performance_tests:
+  stage: performance
+  image: grafana/k6:latest
+  variables:
+    K6_BASE_URL: "https://test.k6.io"
+    K6_ENDPOINT: "/"
+    K6_VUS: "100"
+    K6_DURATION: "60s"
+  script:
+    - mkdir -p performance/k6/results
+    - k6 run performance/k6/load_test.js
+  artifacts:
+    when: always
+    paths:
+      - performance/k6/results/
+    expire_in: 7 days
+
+e2e_tests:
+  stage: e2e
+  image: alpine:3.20
+  script:
+    - echo "No E2E tests defined yet"
+  artifacts:
+    when: always
+    paths:
+      - e2e-results/
+    when: on_success
+    expire_in: 1 day
+

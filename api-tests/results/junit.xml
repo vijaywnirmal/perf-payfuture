@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="7" failures="0" errors="0" time="3.074">
-  <testsuite name="JSONPlaceholder API" errors="0" failures="0" skipped="0" timestamp="2025-09-28T15:16:50" time="2.996" tests="7">
-    <testcase classname="JSONPlaceholder API GET /posts returns 200 and array" name="JSONPlaceholder API GET /posts returns 200 and array" time="0.16">
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="2.801">
+  <testsuite name="JSONPlaceholder API" errors="0" failures="0" skipped="0" timestamp="2025-09-28T15:33:04" time="2.723" tests="7">
+    <testcase classname="JSONPlaceholder API GET /posts returns 200 and array" name="JSONPlaceholder API GET /posts returns 200 and array" time="0.171">
     </testcase>
-    <testcase classname="JSONPlaceholder API POST /posts creates resource: 0" name="JSONPlaceholder API POST /posts creates resource: 0" time="0.326">
+    <testcase classname="JSONPlaceholder API POST /posts creates resource: 0" name="JSONPlaceholder API POST /posts creates resource: 0" time="0.799">
     </testcase>
-    <testcase classname="JSONPlaceholder API POST /posts creates resource: 1" name="JSONPlaceholder API POST /posts creates resource: 1" time="0.672">
+    <testcase classname="JSONPlaceholder API POST /posts creates resource: 1" name="JSONPlaceholder API POST /posts creates resource: 1" time="0.321">
     </testcase>
-    <testcase classname="JSONPlaceholder API POST /posts creates resource: 2" name="JSONPlaceholder API POST /posts creates resource: 2" time="0.322">
+    <testcase classname="JSONPlaceholder API POST /posts creates resource: 2" name="JSONPlaceholder API POST /posts creates resource: 2" time="0.792">
     </testcase>
-    <testcase classname="JSONPlaceholder API GET /posts/1 matches schema" name="JSONPlaceholder API GET /posts/1 matches schema" time="0.032">
+    <testcase classname="JSONPlaceholder API GET /posts/1 matches schema" name="JSONPlaceholder API GET /posts/1 matches schema" time="0.035">
     </testcase>
-    <testcase classname="JSONPlaceholder API Negative: GET /invalid-path returns 404" name="JSONPlaceholder API Negative: GET /invalid-path returns 404" time="0.89">
+    <testcase classname="JSONPlaceholder API Negative: GET /invalid-path returns 404" name="JSONPlaceholder API Negative: GET /invalid-path returns 404" time="0.034">
     </testcase>
-    <testcase classname="JSONPlaceholder API Negative: simulate 500 via WireMock stub (if running)" name="JSONPlaceholder API Negative: simulate 500 via WireMock stub (if running)" time="0.016">
+    <testcase classname="JSONPlaceholder API Negative: simulate 500 via WireMock stub (if running)" name="JSONPlaceholder API Negative: simulate 500 via WireMock stub (if running)" time="0.023">
     </testcase>
   </testsuite>
 </testsuites>

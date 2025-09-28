@@ -22,8 +22,7 @@ npm test
 - JUnit XML: `api-tests/results/junit.xml` (CI-friendly)
 - Postman (Newman): console by default; for HTML use:
 ```bash
-npm i -D newman-reporter-html
-npm run postman -- --reporters cli,html --reporter-html-export results/postman.html
+npm run postman:html
 ```
 
 Environment overrides:
