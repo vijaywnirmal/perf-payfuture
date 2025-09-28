@@ -1,0 +1,27 @@
+<!doctype html>
+	<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>k6 Summary</title>
+		<style>
+			body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:24px;color:#111}
+			h1{font-size:20px;margin:0 0 16px}
+			.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+			.card{border:1px solid #e5e7eb;border-radius:8px;padding:16px}
+			.k{color:#6b7280;font-size:12px;margin-bottom:8px}
+			.v{font-weight:600;font-size:18px}
+		</style>
+	</head>
+	<body>
+		<h1>k6 Test Summary</h1>
+		<div class="grid">
+			<div class="card"><div class="k">Throughput (http_reqs)</div><div class="v">47369 reqs</div></div>
+			<div class="card"><div class="k">Errors (http_req_failed)</div><div class="v">100%</div></div>
+			<div class="card"><div class="k">Latency p95</div><div class="v">0 ms</div></div>
+			<div class="card"><div class="k">Latency p90</div><div class="v">0 ms</div></div>
+			<div class="card"><div class="k">Latency avg</div><div class="v">0 ms</div></div>
+			<div class="card"><div class="k">Active VUs</div><div class="v">100</div></div>
+		</div>
+		<p class="k">Trend stats: avg, min, med, max, p(90), p(95)</p>
+	</body>
+	</html>

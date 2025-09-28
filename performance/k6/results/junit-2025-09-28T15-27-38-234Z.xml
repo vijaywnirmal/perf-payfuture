@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="k6 thresholds" tests="2" failures="0" time="60.0836196">
+  <testcase classname="k6" name="http_req_duration p(95)&lt;500"></testcase>
+  <testcase classname="k6" name="http_req_failed rate&lt;0.01"></testcase>
+</testsuite>

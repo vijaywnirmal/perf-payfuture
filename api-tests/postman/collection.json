@@ -1,0 +1,37 @@
+{
+  "info": {
+    "name": "API Tests - JSONPlaceholder",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /posts",
+      "request": {
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/posts"
+      }
+    },
+    {
+      "name": "POST /posts",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": "https://jsonplaceholder.typicode.com/posts",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": 1,\n  \"title\": \"hello\",\n  \"body\": \"world\"\n}"
+        }
+      }
+    },
+    {
+      "name": "GET /posts/1",
+      "request": {
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/posts/1"
+      }
+    }
+  ]
+}
+

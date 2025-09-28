@@ -1,0 +1,22 @@
+{
+  "name": "api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "postman": "newman run postman/collection.json"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "supertest": "7.0.0"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "newman": "6.1.2",
+    "jest-html-reporters": "3.1.7",
+    "jest-junit": "16.0.0"
+  }
+}
+
